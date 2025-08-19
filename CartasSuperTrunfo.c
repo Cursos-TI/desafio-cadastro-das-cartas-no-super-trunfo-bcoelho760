@@ -28,12 +28,13 @@ int main() {
     printf("Digite o número de pontos túristicos: \n");
     scanf("%d", &turismo1);
 
+    printf("Carta 1: \n");
     printf("Estado: %s \n", estado1 );
     printf("Código: %s\n", codigo1);
     printf("Cidade: %s \n", cidade1);
     printf("População: %d \n", população1);
-    printf("Área: %f km² \n", área1);
-    printf("PIB: %f bilhões de reais \n", pib1);
+    printf("Área: %f \n", área1);
+    printf("PIB: %f \n", pib1);
     printf("Pontos Túristicos: %d \n", turismo1);
 
     printf("Registro completo \n");
@@ -65,8 +66,8 @@ int main() {
     printf("Código: %s\n", codigo2);
     printf("Cidade: %f\n", cidade2);
     printf("População: %d\n", população2);
-    printf("Área: %f km² \n", área2);
-    printf("PIB: %f bilhões de reais \n", pib2);
+    printf("Área: %f\n", área2);
+    printf("PIB: %f\n", pib2);
     printf("Pontos Túristicos: %d\n", turismo2);
 
     printf("Registro completo \n");
