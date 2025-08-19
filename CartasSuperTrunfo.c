@@ -4,7 +4,7 @@ int main() {
 
     char estado1[30], estado2 [30], codigo1[10], codigo2[10], cidade1[30], cidade2[30];
     int população1, população2, turismo1, turismo2;
-    float área1, área2, pib1, pib2;
+    float área1, área2, pib1, pib2, densidade1, densidade2, pibcapita1, pibcapita2;
 
     printf("Vamos registrar a primeira carta. \n");
     printf("Digite o nome do estado: \n");
@@ -28,14 +28,18 @@ int main() {
     printf("Digite o número de pontos túristicos: \n");
     scanf("%d", &turismo1);
 
-    printf("Carta 1: \n");
+    densidade1 = população1 / área1;
+    pibcapita1 = pib1 / população1;
+
     printf("Estado: %s \n", estado1 );
     printf("Código: %s\n", codigo1);
     printf("Cidade: %s \n", cidade1);
     printf("População: %d \n", população1);
-    printf("Área: %f \n", área1);
-    printf("PIB: %f \n", pib1);
+    printf("Área: %f km² \n", área1);
+    printf("PIB: %f bilhões de reais \n", pib1);
     printf("Pontos Túristicos: %d \n", turismo1);
+    printf("Densidade populacional: %f hab/km² \n", densidade1);
+    printf("PIB per capita: %f reais \n", pibcapita1);
 
     printf("Registro completo \n");
     printf("Vamos registrar a segunda carta. \n");
@@ -61,17 +65,23 @@ int main() {
     printf("Digite o número de pontos túristicos: \n)");
     scanf("%d", &turismo2);
 
+    densidade2 = população2 / área2;
+    pibcapita2 = pib2 / população2;
+
     printf("Carta 2: \n");
-    printf("Estado: %s\n", estado2);
-    printf("Código: %s\n", codigo2);
-    printf("Cidade: %f\n", cidade2);
-    printf("População: %d\n", população2);
-    printf("Área: %f\n", área2);
-    printf("PIB: %f\n", pib2);
-    printf("Pontos Túristicos: %d\n", turismo2);
+    printf("Estado: %s \n", estado2);
+    printf("Código: %s \n", codigo2);
+    printf("Cidade: %s \n", cidade2);
+    printf("População: %d \n", população2);
+    printf("Área: %f km² \n", área2);
+    printf("PIB: %f bilhões de reais \n", pib2);
+    printf("Pontos Túristicos: %d \n", turismo2);
+    printf("Densidade populacional: %f hab/km² \n", densidade2);
+    printf("PIB per capita: %f reais \n", pibcapita2);
 
     printf("Registro completo \n");
 
 
     return 0;
 }
+
